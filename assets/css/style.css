@@ -1,0 +1,389 @@
+/*------------------------------------------------------------------
+[Table of styles content]
+
+1 - Header
+2 - Recent Posts
+3 - CTA 2
+4 - Foot Note
+5 - Custom
+--------------------------------------------------------------------*/
+/*-----------------------------------
+    1 - Header
+------------------------------------*/
+header {
+  background-color: #4784BD;
+  color: #fff;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+header a {
+  color: #fff;
+}
+
+header::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.02);
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+h3 {
+  font-family: 'Montserrat';
+
+}
+
+.nav-link {
+  font-family: "Rajdhani", sans-serif;
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: flex-end;
+}
+
+.tel {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contact i {
+  color: #ee1515;
+  margin-right: 10px;
+}
+
+.login {
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-right: 25px;
+  text-transform: uppercase;
+}
+
+.contact a:hover,
+.login:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.login i {
+  color: #ee1515;
+  margin-right: 8px;
+}
+
+.navbar-brand h1 {
+  margin: 0;
+}
+
+.social {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.social a {
+  font-size: 14px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ee1515;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.social a:hover {
+  color: #fff;
+  background-color: #ee1515;
+}
+
+.navbar-brand img {
+  width: 135px;
+}
+
+.navbar-collapse .search-form input[type="text"] {
+  border: 1px solid #ced4da;
+  color: #333;
+  padding: 1.5625rem 0.625rem;
+}
+
+.navbar-collapse .search-form .btn {
+  margin-top: 0;
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+.navbar-collapse .nav-link {
+  font-size: 1.125rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-collapse .nav-link:hover {
+  color: #ee1515;
+}
+
+.cart,
+.login-icon,
+.search-icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.cart:hover,
+.login-icon:hover,
+.search-icon:hover {
+  color: #ee1515;
+}
+
+.cart {
+  margin-left: 20px;
+}
+
+/*-----------------------------------
+    1 - CTA
+------------------------------------*/
+.cta-content {
+  padding: 30px 0 90px;
+  color: #fff;
+  background-color: #ee1515;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-content::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 9, 53, 0.77);
+  position: absolute;
+  top: -25px;
+  left: -1px;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-content .subscribe-btn {
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+/*-----------------------------------
+    1 - Recent Posts
+------------------------------------*/
+.recent-posts {
+  padding: 65px 0 100px;
+}
+
+.recent-posts .btn {
+  margin-top: 60px;
+}
+
+.recent-posts .row .col-lg-6:nth-of-type(odd) .post-thumb {
+  margin-top: 30px;
+}
+
+.recent-posts .row .col-lg-6:nth-of-type(even) .post-thumb {
+  margin-bottom: 30px;
+}
+
+.single-rpost {
+  margin: 35px 0 0;
+}
+
+.post-thumb {
+  flex: 0 0 360px;
+  margin: 0 20px;
+}
+
+.post-content {
+  color: #727272;
+}
+
+.post-content time {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.post-content h3 {
+  margin: 10px 0 16px;
+}
+
+.post-content h3 a {
+  color: #2F2F2F;
+  font-weight: 800;
+}
+
+.post-content h3 a:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.post-content a {
+  color: #ccc;
+}
+
+/* .post-content a:hover {
+  color: #26264b;
+} */
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+  color: #4784BD;
+}
+
+.post-content .post-btn {
+  color: #6e6e6e;
+  text-align: center;
+  font-size: 10px;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
+.post-content .post-btn:hover {
+  color: #fff;
+  background-color: #ee1515;
+}
+
+/*-----------------------------------
+    1 - CTA 2
+------------------------------------*/
+.cta2 {
+  margin: 50px 0 -30px;
+}
+
+/*-----------------------------------
+    1 - Footer
+------------------------------------*/
+
+
+/*-----------------------------------
+    1 - Foot Note
+------------------------------------*/
+.foot-note {
+  padding: 35px 0;
+  background-color: #4784BD;
+  color: #f1f1f1;
+}
+
+.foot-note a {
+  color: #26264b;
+}
+
+.foot-note a:last-child {
+  margin-left: 30px;
+}
+
+.foot-note a.fh5-link {
+  margin-left: 0;
+}
+
+
+/* === Custom === */
+.card-btn {
+  margin-top: 10px !important;
+}
+
+.post-content .btn,
+.modal-footer .btn {
+  padding: 0.2875rem 1.7625rem;
+  background-color: #174A7B;
+  color: #f1f1f1;
+  border-color: #174A7B;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.repairsBtn {
+  background-color: #ed4f32;
+  border-radius: 10px;
+  color: #f1f1f1;
+  font-size: 23px;
+  font-weight: 900;
+  padding: 10px 20px;
+  border: 0;
+}
+
+.modalCancel {
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+.col-vh-100 {
+  min-height: 100vh;
+}
+
+.medical-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  .medical-card {
+    flex-direction: column;
+  }
+
+  .medical-card-fade-right {
+    flex-direction: column-reverse;
+  }
+
+  .post-thumb {
+    flex: 0 0 260px;
+  }
+
+  .post-content.text-sm-right,
+  .post-content {
+    text-align: center !important;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .post-thumb {
+    flex: 0 0 550px;
+  }
+}
+
+/* === End Custom === */
